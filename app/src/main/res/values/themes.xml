@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StoryKU" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+    </style>
+
+    <style name="Theme.StoryKU" parent="Base.Theme.StoryKU" />
+
+    <style name="Theme.StoryKU.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <item name="appWidgetRadius">16dp</item>
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="Theme.StoryKU.AppWidgetContainer" parent="Theme.StoryKU.AppWidgetContainerParent">
+        <item name="appWidgetPadding">16dp</item>
+    </style>
+</resources>

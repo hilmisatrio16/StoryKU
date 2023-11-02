@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_transparent_57">#91FFFFFF</color>
+    <color name="white_transparent_85">#B7D6D6D6</color>
+
+    <color name="light_cobalt_blue">#8EA7E9</color>
+    <color name="lavender">#E5E0FF</color>
+    <color name="cultured">#F4F6F8</color>
+    <color name="cornflower_blue">#5E87F0</color>
+    <color name="dim_gray">#676869</color>
+    <color name="blue_violet">#645CBB</color>
+
+    <color name="background_shimmer">#dddddd</color>
+    <color name="red_light">#FF4E4E</color>
+    <color name="green_light">#6FFF7D</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="yellow_bright">#FFFF00</color>
+    <color name="background_color">#F4F6F8</color>
+    <color name="background_color_home">#B6B6B6</color>
+    <color name="text_color">#FF000000</color>
+    <color name="button_color">#0A0A0A</color>
+    <color name="black_color_start">#353535</color>
+    <color name="black_color_end">#B6B6B6</color>
+    <color name="background_dialog_fragment">#FFFFFF</color>
+    <color name="status_bar_color">#E1E1E1</color>
+    <color name="color_hint">#585858</color>
+    <color name="grey">#C6C6C6</color>
+</resources>

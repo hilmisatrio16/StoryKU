@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_bright">#FFFF00</color>
+    <color name="background_color">#121212</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="button_color">#FFFF00</color>
+    <color name="background_color_home">#121212</color>
+    <color name="black_color_start">#000000</color>
+    <color name="black_color_end">#121212</color>
+    <color name="background_dialog_fragment">#212121</color>
+    <color name="status_bar_color">#151515</color>
+    <color name="color_hint">#C1C1C1</color>
+    <color name="grey">#C6C6C6</color>
+</resources>

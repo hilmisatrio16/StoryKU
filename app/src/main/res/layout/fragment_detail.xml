@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".ui.detail.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_detail_story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            shimmer:duration="700">
+
+            <include layout="@layout/item_detail_placeholder" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/layout_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:maxWidth="400dp"
+                    android:scaleType="centerCrop"
+                    android:transitionName="image_content_detail"
+                    app:shapeAppearanceOverlay="@style/ShapeImageAppearanceOverlayCornerBottom"
+                    app:srcCompat="@drawable/ic_launcher_background"
+                    tools:ignore="ImageContrastCheck" />
+
+                <Button
+                    android:id="@+id/button_back"
+                    style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:contentDescription="@string/back_to_home_page"
+                    android:transitionName="button back"
+                    app:backgroundTint="@color/white_transparent_57"
+                    app:icon="@drawable/ic_arrow_back"
+                    app:iconTint="#434345" />
+            </FrameLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/name"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:transitionName="name_content_detail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_header" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_date_create_story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/date_create_story"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:transitionName="date_content_detail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_user" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_content_story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textMultiLine"
+                android:text="@string/lorem_ipsum"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:transitionName="description_content_detail"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_date_create_story" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
